@@ -1,0 +1,16 @@
+html, body {
+  overflow: hidden;
+  background-color: black;
+}
+
+.div1{
+  position:absolute;
+  z-index:1;
+}
+
+.div2{
+  position:absolute;
+  z-index:2;
+  left:0%;
+  right: 0%;
+}

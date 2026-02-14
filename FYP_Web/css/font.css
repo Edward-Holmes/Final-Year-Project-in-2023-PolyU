@@ -1,0 +1,20 @@
+/*自定义字体*/
+@font-face {
+    font-family: cyberHead;
+    src: url("../font/Exwayer.ttf");
+  }
+
+  @font-face {
+    font-family: cyberInfo;
+    src: url("../font/Geizer-2.otf");
+  }
+
+  @font-face {
+    font-family: cyberInput;
+    src: url("../font/Drexs.ttf");
+  }
+
+  @font-face {
+    font-family: cyberBtn;
+    src: url("../font/KillerTech.ttf");
+  }

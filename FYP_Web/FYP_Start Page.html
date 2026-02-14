@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    
+    <meta charset="UTF-8">
+    <title>Destiny Parking System</title>
+    <link rel="icon" href="./multimedia/icon/FYP_Icon.ico" type="image/x-icon"><!--设置网页图标-->
+    <link rel="stylesheet" href="./css/reset.min.css"><!--设置页面基本风格-->
+    <link rel="stylesheet" href="./css/style.css"><!--设置页面风格-->
+    <link rel="stylesheet" href="./css/Login_Style.css"><!--设置登录和注册模块的风格-->
+    <link rel="stylesheet" href="./css/font.css"><!--设置自定义字体-->
+    <script src="./js/LoginOrRegister.js" type="text/javascript"></script><!--登录和注册模块转换函数-->
+    <script src="./js/LoginTest.js" type="text/javascript"></script><!--登录检测函数-->
+    <script src="./js/RegisterTest.js" type="text/javascript"></script><!--注册检测函数-->
+
+  </head>
+  <body>
+    <div class="div1">
+      <script src="./js/script.js"></script><!--背景鼠标跟随特效函数-->
+    </div>
+
+    <style type="text/css">/*定义页面字体*/
+      div {
+        font-family: cyberHead;
+      }
+
+      .active, p {
+        font-family: cyberInfo;
+      }
+
+      .btn, button {
+        font-family: cyberBtn;
+      }
+
+      input {
+        font-family: cyberInput;
+      }
+
+      h1 {
+        background-image: linear-gradient(to top, #FFFF00, red);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 90px;
+        font-family: cyberHead;
+      }
+    </style>
+
+    <div class="div2">
+      <h1 align="center">Welcome to Destiny Parking System</h1>
+      
+      <div class="control">
+        <div class="item">
+            <div class="active">Login</div><div>Register</div>
+        </div>
+        <div class="content">
+            <div style="display: block;">
+                <form action="PHP/Login.php" method="post" id="formid1"><!--登录-->
+                  <p>E-mail</p>
+                  <input type="text" placeholder="E-mail" id="E-mail" name="E-mail" maxlength="32">
+                  <p>Password</p>
+                  <input type="password" placeholder="Password" id="passwd" name="passwd" maxlength="15">
+                  <br>
+                  <input style="font-size: 20px;" type="button" onclick="Login()" value="Login" class="btn">
+                  <!--修改密码-->
+                  <!--修改--><a href="ForgetPassword.html"><button type="button">Forget your password?</button></a>
+                </form>
+            </div>
+            <div>
+                <!--修改--><form action="PHP/Register.php" method="post" id="formid2"><!--注册-->
+                  <p>E-mail</E-mail></p>
+                  <input type="email" placeholder="E-mail" id="email" name="email" maxlength="32">
+                  <p>Password</p>
+                  <input type="password" placeholder="Password" id="passwd1" name="passwd1" maxlength="15">
+                  <p>Repeat Your Password</p>
+                  <input type="password" placeholder="Repeat Your Password" id="passwd2" name="passwd2" maxlength="15">
+                  <br>
+                  <!--修改--><input style="font-size: 20px;" type="button" onclick="Register()" value="Register" class="btn">
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
